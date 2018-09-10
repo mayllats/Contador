@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contagem:"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/visor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/label"
+        android:text="0"
+        android:textSize="24sp"
+        android:background="#D4D4D4"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/adicionar"
+        android:layout_below="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="100dp"
+        android:onClick="adiciona"/>
+
+    <Button
+        android:id="@+id/diminuir"
+        android:layout_below="@+id/adicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="diminui"/>
+
+    <Button
+        android:id="@+id/limpar"
+        android:layout_below="@+id/diminuir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zerar contagem"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="limpa"/>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Contador</string>
+    <string name="visor"></string>
+    <string name="adiciona"></string>
+    <string name="diminui"></string>
+    <string name="limpa"></string>
+</resources>
